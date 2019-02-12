@@ -28,7 +28,37 @@ def swap_elements_from_to(array, index, destination_index)
   array
 end
   
-def reverse_array
-  reversed_array = array.sort
+def reverse_array(array)
+  reversed_array = array.reverse
+  reversed_array
 end
+
+def kesha_maker(array)
+  new_array=[]
+  array.each do |string|
+    kesha = string.split("")
+    kesha[2] = '$'
+    new_array<< kesha.join
+  end
+  new_array
+end
+
+def find_a(array)
+  new_array=[]
+  array.each do |string|
+    if string.start_with?("a")
+      new_array<< string
+    end
+  end
+  new_array
+end
+
+def sum_array(array)
+  array.sum
+end
+
+def add_s
+
+end
+  
   

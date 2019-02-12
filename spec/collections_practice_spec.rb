@@ -33,8 +33,8 @@ describe 'collections practice' do
   #Question 4 - advanced #1
     describe '#swap_elements_from_to' do
       it 'taking an array, a current index and a desired index as inputs, swap element from current index to desired index' do
-          expect(swap_elements_from_to(["a","b","c"],0,2)).to eq
-          (["c","b","a"])
+        #binding.pry
+          expect(swap_elements_from_to(["a","b","c"],0,2)).to eq(["c","b","a"])
       end
     end
 
