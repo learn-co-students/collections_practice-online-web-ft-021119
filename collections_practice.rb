@@ -35,7 +35,7 @@ end
 
 def kesha_maker(array)
   new_array=[]
-  array.each do |string|
+  array.collect do |string|
     kesha = string.split("")
     kesha[2] = '$'
     new_array<< kesha.join
@@ -54,11 +54,24 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array.sum
+  array.inject {|sum, n| sum + n }
 end
 
-def add_s
 
+def add_s(array)
+  new_array = []
+  i = 0; i < array.length
+  array.each do |index|
+    if i != 1
+      new_array.push(array[i] + "s")
+    else
+      new_array.push(array[i])
+    end
+    i += 1
+    #binding.pry
+  end
+  new_array
 end
+
   
   
