@@ -73,5 +73,11 @@ def add_s(array)
   new_array
 end
 
+# def add_s(array)
+#   [1,2].each_with_index.collect{|element, index|}
+#   binding.pry
+# end
+
+
   
   
