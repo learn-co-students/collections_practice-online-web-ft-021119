@@ -23,8 +23,12 @@ def swap_elements(array)
 end
 
 def swap_elements_from_to(array, index, destination_index)
+  #binding.pry
   array[index], array[destination_index] = array[destination_index], array[index]
   array
 end
   
+def reverse_array
+  reversed_array = array.sort
+end
   

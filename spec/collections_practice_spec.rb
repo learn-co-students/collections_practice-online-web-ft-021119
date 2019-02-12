@@ -25,7 +25,6 @@ describe 'collections practice' do
 
   # Question 4
   describe '#swap_elements' do
-    it 'takes three arguments, an array, a current index, and a desired index'
       it 'swap the second and third elements of an array' do
       expect(swap_elements(["blake", "ashley", "scott"])).to eq(["blake", "scott", "ashley"])
     end
@@ -33,9 +32,9 @@ describe 'collections practice' do
   
   #Question 4 - advanced #1
     describe '#swap_elements_from_to' do
-      it 'swap elements from current index to desired index' do
-        expect(swap_elements_from_to(["a","b","c"],0,2)).to eq
-        (["c","b","a"])
+      it 'taking an array, a current index and a desired index as inputs, swap element from current index to desired index' do
+          expect(swap_elements_from_to(["a","b","c"],0,2)).to eq
+          (["c","b","a"])
       end
     end
 
