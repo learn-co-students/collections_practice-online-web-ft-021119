@@ -60,16 +60,18 @@ end
 
 def kesha_maker(array)
   #taking an array as an input, change the 3rd character of each element to a dollar sign.
-array.map do |word|
-  word[3] = "$"
+array.each do |word|
+  word[2] = "$"
+  #word.insert 2,"$"
+  #word.gsub("s","$")
 end
-#binding.pry
+end
 
-
-# Build a method called `kesha_maker`
-# that takes in an array of strings and
-# replaces the third character in
-# each string with a `$` ("dollar sign")—Ke$ha style.
-# Use the `.each` method to iterate and build a new
-# array to return at the end of your method,
-# just like we did in the "My Each" lab.
+def find_a(array)
+#array =  ["apple", "orange", "pear", "avis", "arlo", "ascot"]
+#Runs an expression for each array element and, if it is true, that element gets added to the output which is returned. This is called filter in other languages.
+  array.select {|word| word.start_with? "a"}
+      binding.pry
+    end
+  end
+end
