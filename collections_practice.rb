@@ -70,8 +70,16 @@ end
 def find_a(array)
 #array =  ["apple", "orange", "pear", "avis", "arlo", "ascot"]
 #Runs an expression for each array element and, if it is true, that element gets added to the output which is returned. This is called filter in other languages.
-  array.select {|word| word.start_with? "a"}
-      binding.pry
-    end
+  array.select do |word|
+    word[0] == "a"
+    #word.start_with?("a")
+      #binding.pry
+    #end
   end
+end
+
+def sum_array
+
+
+  #binding.pry
 end
