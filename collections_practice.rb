@@ -22,9 +22,14 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
+    array
+  
     array.each do |i| 
       puts "$"
     end
 end
   
- 
+ positions.zip(string_replace).each do |pos, str|
+  string[pos.to_i] = str
+  puts string
+end
