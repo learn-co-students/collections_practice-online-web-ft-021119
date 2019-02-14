@@ -23,7 +23,6 @@ end
 
 def kesha_maker(array)
     array.each {|2| puts array["$"]}
-
-  
+end
   
  
