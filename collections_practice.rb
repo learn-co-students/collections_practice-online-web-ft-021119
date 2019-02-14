@@ -45,5 +45,5 @@ end
 #end
 
 def add_s(array)
-  array.collect.each_with_index {|i, index| index != 1 puts i + "s"}
+  array.collect.each_with_index {|i, index| if index != 1 puts i + "s"}
 end
