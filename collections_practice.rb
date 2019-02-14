@@ -36,9 +36,10 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.collect.each_with_index |i, index| 
-  if i=[1] 
-    puts 
+  array.collect.each_with_index do |i, index| 
+  if i = [1] 
+    puts ""
   else
     puts i + "s"
+  end
 end
