@@ -29,3 +29,4 @@ end
   
 def find_a(array)
   array.detect {|i| i.is_a?("a")}
+end
