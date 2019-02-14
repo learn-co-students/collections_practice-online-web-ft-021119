@@ -38,9 +38,9 @@ end
 def add_s(array)
   array.collect.each_with_index do |i, index| 
   if index != 1 
-    puts i + "s"
+    i + "s"
   else
-    
+    i = i
   end
   end
 end
