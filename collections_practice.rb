@@ -25,8 +25,15 @@ def sort_array_char_count(collection)
   result = []
   while i < collection.length
     result = collection.sort { |a, b| a.length <=> b.length }
-binding.pry
     i += 1
   end
   return result.flatten
+end
+
+def swap_elements(collection)
+  i = 0
+  while i < collection.length
+
+    i += 1
+  end
 end
