@@ -24,12 +24,9 @@ def sort_array_char_count(collection)
   i = 0
   result = []
   while i < collection.length
-
-
-    result = letter_count.sort
-    binding.pry
-
+    result = collection.sort { |a, b| a.length <=> b.length }
+binding.pry
     i += 1
   end
-return result.flatten
+  return result.flatten
 end
