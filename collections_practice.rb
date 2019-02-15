@@ -19,3 +19,17 @@ def sort_array_desc(collection)
   end
 return result.flatten
 end
+
+def sort_array_char_count(collection)
+  i = 0
+  result = []
+  while i < collection.length
+
+
+    result = letter_count.sort
+    binding.pry
+
+    i += 1
+  end
+return result.flatten
+end
